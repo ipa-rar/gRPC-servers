@@ -1,6 +1,6 @@
 syntax="proto3";
 
-package bidirectional_databroker;
+package simple_databroker;
 
 message BrokerRequest{
     int32 id = 1;
@@ -16,5 +16,5 @@ message BrokerResponse{
 }
 
 service BrokerService{
-    rpc BidirectionalStreaming(stream BrokerRequest) returns ( BrokerResponse);
+    rpc SimpleMethod( BrokerRequest) returns ( BrokerResponse);
 }

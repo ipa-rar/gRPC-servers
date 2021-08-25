@@ -1,0 +1,8 @@
+grpcio-tools
+grpcio
+protobuf
+grpc_interceptor
+multithreading
+python-json-config
+pandas
+numpy
