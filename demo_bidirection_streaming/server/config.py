@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-port = 'localhost:8061'
+port = 'grpc_client:8061'

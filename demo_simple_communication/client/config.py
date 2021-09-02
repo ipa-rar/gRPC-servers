@@ -1,4 +1,8 @@
 #!/usr/bin/env python
 
-port = 'localhost:8061'
+# Use local host when running locally
+# port = 'localhost:50051'
+
+# Use simple_server_app when running inside docker
+port = 'simple_server_app:50051'
 streaming_rate = 0.1

@@ -12,8 +12,7 @@ RUN pip3 install -r requirements.txt
 RUN pip3 install --upgrade protobuf
 
 WORKDIR $WS/server
-
-ENTRYPOINT [ "python3","-u","server.py" ]
-#RUN chmod +x ./docker/entrypoint.sh
-#ENTRYPOINT ["./docker/entrypoint.sh"]
-#CMD ["bash"]
+COPY ./docker/server-entrypoint.sh /
+RUN chmod +x /server-entrypoint.sh
+ENTRYPOINT ["/server-entrypoint.sh"]
+CMD ["bash"]
